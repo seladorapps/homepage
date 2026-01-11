@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Everyday Wisdom – Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the Everyday Wisdom mobile application." />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f172a;
+      --card: #020617;
+      --accent: #22c55e;
+      --accent-soft: rgba(34, 197, 94, 0.1);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: #1f2937;
+      --code-bg: #020617;
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.7);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+      background: radial-gradient(circle at top, #1d283a, #020617 55%);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page-shell {
+      min-height: 100vh;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 900px;
+      background: radial-gradient(circle at top left, rgba(34, 197, 94, 0.14), transparent 55%),
+                  radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.16), transparent 55%),
+                  rgba(15, 23, 42, 0.96);
+      border-radius: 24px;
+      border: 1px solid rgba(148, 163, 184, 0.22);
+      box-shadow: var(--shadow-soft);
+      padding: 28px 22px 26px;
+      backdrop-filter: blur(28px);
+    }
+
+    @media (min-width: 768px) {
+      .page-shell { padding: 48px 24px; }
+      .card { padding: 36px 34px 32px; border-radius: 28px; }
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 20%, #bbf7d0, #22c55e);
+      box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+    }
+
+    .header-row {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    @media (min-width: 640px) {
+      .header-row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+    }
+
+    h1 {
+      font-size: clamp(1.9rem, 2.2vw + 1.4rem, 2.35rem);
+      letter-spacing: -0.04em;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h1 span.brand-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 12px;
+      background: radial-gradient(circle at 25% 20%, #bbf7d0, #22c55e);
+      color: #022c22;
+      font-weight: 700;
+      font-size: 18px;
+      box-shadow: 0 12px 24px rgba(34, 197, 94, 0.45);
+    }
+
+    .subtitle {
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 14px;
+      max-width: 520px;
+    }
+
+    .meta {
+      text-align: left;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .meta strong { color: #e5e7eb; font-weight: 500; }
+
+    hr {
+      border: none;
+      border-top: 1px dashed rgba(148, 163, 184, 0.3);
+      margin: 18px 0 22px;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      margin: 20px 0 8px;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 6px 0 10px;
+      line-height: 1.6;
+      font-size: 0.94rem;
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 6px 0 14px 1.2rem;
+      padding: 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    li { margin-bottom: 6px; }
+
+    a {
+      color: #4ade80;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .pill-callout {
+      margin-top: 12px;
+      margin-bottom: 4px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.45);
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 12px;
+      margin-bottom: 2px;
+    }
+
+    .chip {
+      padding: 5px 9px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      font-size: 0.8rem;
+      color: var(--muted);
+      background: rgba(15, 23, 42, 0.9);
+    }
+
+    .footer-note {
+      margin-top: 18px;
+      font-size: 0.78rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <main class="card" aria-labelledby="policy-title">
+      <div class="badge" aria-hidden="true">
+        <span class="badge-dot"></span>
+        <span>Everyday Wisdom · Privacy Policy</span>
+      </div>
+
+      <div class="header-row">
+        <div>
+          <h1 id="policy-title">
+            <span class="brand-mark">E</span>
+            <span>Privacy Policy</span>
+          </h1>
+          <p class="subtitle">
+            This Privacy Policy describes how the Everyday Wisdom mobile application collects,
+            uses, and shares your information.
+          </p>
+        </div>
+        <div class="meta">
+          <div><strong>App:</strong> Everyday Wisdom</div>
+          <div><strong>Developer:</strong> Selador Apps</div>
+          <div><strong>Last updated:</strong> 11 January 2026</div>
+        </div>
+      </div>
+
+      <hr />
+
+      <section aria-label="Overview">
+        <h2>1. Overview</h2>
+        <p>
+          Everyday Wisdom is a mobile app that delivers inspirational messages and short
+          chat-style responses in many languages. We respect your privacy and are committed
+          to protecting your personal data. This Policy explains what information we collect,
+          how we use it, and the choices you have.
+        </p>
+        <p class="pill-callout">
+          By installing or using Everyday Wisdom, you agree to the collection and use of
+          information in accordance with this Privacy Policy. If you do not agree, please
+          do not use the app.
+        </p>
+      </section>
+
+      <section aria-label="Information we collect">
+        <h2>2. Information We Collect</h2>
+        <p>We collect the following categories of information when you use the app:</p>
+        <h3 style="font-size:0.98rem;margin:10px 0 4px;">2.1 Information you provide</h3>
+        <ul>
+          <li>
+            <strong>App preferences:</strong> such as your selected language, theme, daily
+            notification settings, and other in-app configuration choices.
+          </li>
+          <li>
+            <strong>Reactions and feedback:</strong> emoji or button reactions to content,
+            reports of offensive or inappropriate responses, and similar interaction data.
+          </li>
+        </ul>
+        <h3 style="font-size:0.98rem;margin:10px 0 4px;">2.2 Information collected automatically</h3>
+        <ul>
+          <li>
+            <strong>Device identifiers:</strong> a randomly generated unique user or device
+            identifier used to differentiate usage and reactions. We do not attempt to
+            identify you as a specific individual from this identifier.
+          </li>
+          <li>
+            <strong>Device and app information:</strong> device model, operating system
+            version, app version, language and region settings, and basic diagnostic
+            information (such as crash data and performance metrics).
+          </li>
+          <li>
+            <strong>Usage data:</strong> information about how you interact with Everyday
+            Wisdom, such as which screens you view, your interactions with messages, and
+            the approximate time and frequency of use.
+          </li>
+        </ul>
+        <h3 style="font-size:0.98rem;margin:10px 0 4px;">2.3 Information related to notifications</h3>
+        <ul>
+          <li>
+            <strong>Notification tokens:</strong> if you enable push or daily notifications,
+            we collect a device-specific token to deliver notifications to your device.
+          </li>
+          <li>
+            <strong>Notification preferences:</strong> your chosen schedule, whether
+            notifications are enabled, and your current language or locale for the
+            notification content.
+          </li>
+        </ul>
+        <h3 style="font-size:0.98rem;margin:10px 0 4px;">2.4 Information from third-party services</h3>
+        <ul>
+          <li>
+            <strong>Advertising data:</strong> Everyday Wisdom uses third-party advertising
+            networks such as Google AdMob / Google Mobile Ads to show ads. These partners
+            may collect device identifiers, approximate location, and other information
+            about ad interactions in accordance with their own privacy policies.
+          </li>
+          <li>
+            <strong>Analytics and diagnostics:</strong> The app may use third-party
+            services (for example, Firebase or similar tools) to help us understand
+            app performance, usage patterns, and crashes. These services process data
+            on our behalf.
+          </li>
+        </ul>
+      </section>
+
+      <section aria-label="How we use information">
+        <h2>3. How We Use Your Information</h2>
+        <p>We use the collected information to:</p>
+        <ul>
+          <li>Deliver inspirational chat responses and other in-app content in your language.</li>
+          <li>Store and apply your preferences, such as language, theme, and notification settings.</li>
+          <li>Send daily or scheduled notifications if you choose to enable them.</li>
+          <li>Measure reactions and feedback to improve the quality and safety of responses.</li>
+          <li>Detect and reduce misuse, abuse, or offensive content reported via the app.</li>
+          <li>Monitor app performance, fix bugs, and improve stability and user experience.</li>
+          <li>Show ads and measure the effectiveness of advertising campaigns.</li>
+          <li>Comply with legal obligations and enforce our terms.</li>
+        </ul>
+      </section>
+
+      <section aria-label="Legal basis">
+        <h2>4. Legal Bases for Processing (where applicable)</h2>
+        <p>
+          Depending on your location, we may rely on different legal bases to process your
+          information, including:
+        </p>
+        <ul>
+          <li><strong>Consent:</strong> for features like personalized notifications and ads to the extent required by law.</li>
+          <li><strong>Legitimate interests:</strong> to operate, maintain, and improve Everyday Wisdom in a secure and reliable manner.</li>
+          <li><strong>Legal obligations:</strong> to comply with applicable laws and regulations and respond to lawful requests.</li>
+        </ul>
+      </section>
+
+      <section aria-label="Sharing">
+        <h2>5. How We Share Information</h2>
+        <p>
+          We do not sell your personal data. We may share limited information in the
+          following situations:
+        </p>
+        <ul>
+          <li>
+            <strong>Service providers:</strong> with trusted third parties who perform
+            services on our behalf, such as hosting, analytics, or notification delivery.
+            They are required to protect your information and use it only for the services
+            we request.
+          </li>
+          <li>
+            <strong>Advertising partners:</strong> with ad networks and partners like Google
+            AdMob to display ads within the app. These partners may use their own tracking
+            technologies in accordance with their policies.
+          </li>
+          <li>
+            <strong>Legal and safety:</strong> when we believe disclosure is necessary to
+            comply with law, regulation, legal process, or to protect the rights, property,
+            or safety of our users or others.
+          </li>
+          <li>
+            <strong>Business transfers:</strong> in connection with a merger, acquisition,
+            or other change of control, your information may be transferred as part of the
+            transaction in accordance with this Policy.
+          </li>
+        </ul>
+      </section>
+
+      <section aria-label="Advertising and tracking">
+        <h2>6. Advertising, Cookies, and Similar Technologies</h2>
+        <p>
+          Everyday Wisdom displays ads provided by third-party advertising networks. These
+          partners may use cookies, mobile identifiers, or similar technologies to:
+        </p>
+        <ul>
+          <li>Provide, personalize, and measure ads shown in the app.</li>
+          <li>Limit how often you see the same advertisement.</li>
+          <li>Detect and prevent fraud or abuse.</li>
+        </ul>
+        <p>
+          On some platforms, you can control ad personalization using your device settings
+          (for example, "Limit Ad Tracking" on iOS or "Opt out of Ads Personalization" on
+          Android). For more details about how Google uses data, please see:
+          <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">
+            Google Advertising Policies
+          </a>.
+        </p>
+      </section>
+
+      <section aria-label="Data retention">
+        <h2>7. Data Retention</h2>
+        <p>
+          We retain your information only for as long as necessary to provide Everyday
+          Wisdom, fulfill the purposes described in this Policy, and comply with our legal
+          obligations. Retention periods may vary depending on the type of data and how we
+          use it, but in general we aim to:
+        </p>
+        <ul>
+          <li>Keep technical logs and diagnostic data for a limited period to troubleshoot issues.</li>
+          <li>Retain reaction and usage data in aggregated or de-identified form when possible.</li>
+          <li>Delete or de-identify data when it is no longer needed for the purposes described above.</li>
+        </ul>
+      </section>
+
+      <section aria-label="Security">
+        <h2>8. Data Security</h2>
+        <p>
+          We use reasonable technical and organizational measures to protect your information
+          against unauthorized access, loss, misuse, or alteration. However, no method of
+          transmission over the internet or electronic storage is completely secure, and we
+          cannot guarantee absolute security.
+        </p>
+      </section>
+
+      <section aria-label="Children">
+        <h2>9. Children&apos;s Privacy</h2>
+        <p>
+          Everyday Wisdom is not intended for children under the age at which they can
+          legally provide consent to data processing in their jurisdiction. We do not
+          knowingly collect personal information from children below this age. If you
+          believe that a child has provided us with personal information, please contact
+          us so that we can delete it.
+        </p>
+      </section>
+
+      <section aria-label="Your rights">
+        <h2>10. Your Rights and Choices</h2>
+        <p>
+          Depending on your location, you may have certain rights regarding your personal
+          data, such as the right to access, correct, delete, or restrict the use of your
+          information. While we may not be able to directly identify you by name, we will
+          reasonably assist you in exercising applicable rights where possible.
+        </p>
+        <ul>
+          <li>
+            <strong>App settings:</strong> you can change language, theme, and notification
+            preferences at any time in the app settings.
+          </li>
+          <li>
+            <strong>Device settings:</strong> you can manage permissions such as push
+            notifications, mobile data, or ad personalization from your device settings.
+          </li>
+          <li>
+            <strong>Contact us:</strong> you may contact us using the details below if you
+            have questions about your rights or would like assistance.
+          </li>
+        </ul>
+      </section>
+
+      <section aria-label="International transfers">
+        <h2>11. International Data Transfers</h2>
+        <p>
+          Everyday Wisdom and our service providers may process your information in
+          countries other than the one where you reside. These countries may have data
+          protection laws that are different from those in your country. Where required,
+          we take appropriate measures to protect your information in accordance with this
+          Policy.
+        </p>
+      </section>
+
+      <section aria-label="Changes">
+        <h2>12. Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. When we do, we will revise
+          the "Last updated" date at the top of this page. In case of material changes,
+          we may provide additional notice within the app or through other means. Your
+          continued use of Everyday Wisdom after any changes indicates your acceptance of
+          the updated Policy.
+        </p>
+      </section>
+
+      <section aria-label="Contact">
+        <!-- <h2>13. Contact Us</h2>
+        <p>
+          If you have any questions, concerns, or requests regarding this Privacy Policy
+          or our data practices, please contact us at:
+        </p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></li>
+        </ul> -->
+        <div class="chip-row" aria-hidden="true">
+          <span class="chip">Respectful AI experiences</span>
+          <span class="chip">Minimal data collection</span>
+          <span class="chip">User-first design</span>
+        </div>
+        <p class="footer-note">
+          This Privacy Policy is provided for informational purposes only and does not
+          constitute legal advice. If you require legal guidance, please consult a
+          qualified professional.
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -199,7 +199,10 @@ function ContactSection() {
 function Footer() {
   return (
     <footer className="footer">
-      <p>&copy; 2026 Selador Apps. All rights reserved.</p>
+      <p>
+        &copy; 2026 Selador Apps. All rights reserved.{' '}
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </p>
     </footer>
   )
 }
