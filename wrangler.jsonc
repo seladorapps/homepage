@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "homepage",
+  "name": "seladorappshomepage",
   "pages_build_output_dir": "dist",
   "compatibility_date": "2026-04-06",
   "observability": {
