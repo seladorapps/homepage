@@ -112,7 +112,7 @@
   justify-content: center;
   background: 
     linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%),
-    url('https://plus.unsplash.com/premium_photo-1664302753070-e4cc31119668?q=80&w=1920') center/cover no-repeat;
+    url('/images/thinking-chimp-with-twig.avif') center/cover no-repeat;
   padding: calc(var(--header-height) + 2rem) 2rem 2rem;
   text-align: center;
 }
@@ -169,7 +169,7 @@
 
 .app-card {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
   background: white;
   padding: 2rem;
@@ -223,6 +223,12 @@
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.coming-soon-message {
+  margin: 0;
+  font-weight: 600;
+  color: #b45309;
 }
 
 .store-btn {
@@ -405,6 +411,10 @@
 
   .store-links {
     justify-content: center;
+  }
+
+  .coming-soon-message {
+    text-align: center;
   }
 
   .section-title {
