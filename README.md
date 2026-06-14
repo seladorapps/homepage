@@ -29,7 +29,7 @@ npm install
 npm run dev
 ```
 
-The site will be available at `http://localhost:5173`
+The site will be available at `http://localhost:5173` ?
 
 ### Build for production
 
@@ -53,7 +53,7 @@ npm run build
 
 ### Option 2: GitHub Actions (Recommended)
 
-The repository includes a GitHub Actions workflow that automatically deploys to GitHub Pages when you push to the `main` branch.
+The repo includes a GitHub Actions workflow that automatically deploys to GitHub Pages when you push to the `main` branch.
 
 1. Go to your repository Settings > Pages
 2. Set Source to "GitHub Actions"
