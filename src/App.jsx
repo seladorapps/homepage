@@ -9,8 +9,8 @@ const apps = [
     description: 'Daily wisdom quotes to inspire and motivate you throughout your day.',
     icon: '/images/ew-logo.png',
     descriptionImage: '/images/everyday-wisdome-inro-tiles.png',
-    androidLink: 'https://play.google.com/apps/internaltest/4699382704732330205',
-    iosLink: '#',
+    androidLink: 'https://play.google.com/store/apps/details?id=com.seladorapps.everydaywisdom',
+    iosLink: 'https://apps.apple.com/us/app/everyday-wisdom/id6771583360',
   },
   {
     id: 2,
