@@ -5,8 +5,8 @@
 }
 
 :root {
-  --primary-color: #6366f1;
-  --primary-dark: #4f46e5;
+  --primary-color: #2f9e44;
+  --primary-dark: #237a34;
   --secondary-color: #22c55e;
   --text-color: #1f2937;
   --text-light: #6b7280;
@@ -22,7 +22,15 @@ html {
 body {
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color: var(--text-color);
-  background: var(--bg-color);
+  background-color: #0f2a1b;
+  background-image:
+    radial-gradient(1200px 520px at 50% 105%, rgba(6, 31, 19, 0.88) 0%, rgba(6, 31, 19, 0) 72%),
+    radial-gradient(640px 280px at 18% 82%, rgba(46, 108, 64, 0.45) 0%, rgba(46, 108, 64, 0) 78%),
+    radial-gradient(780px 330px at 84% 86%, rgba(31, 84, 49, 0.42) 0%, rgba(31, 84, 49, 0) 80%),
+    linear-gradient(180deg, #264a34 0%, #173626 45%, #0f261a 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   line-height: 1.6;
   overflow-x: hidden;
 }

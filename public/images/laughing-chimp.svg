@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Laughing chimp face icon">
+  <defs>
+    <linearGradient id="fur" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8c5a3a"/>
+      <stop offset="100%" stop-color="#5f3a24"/>
+    </linearGradient>
+  </defs>
+  <circle cx="64" cy="64" r="58" fill="url(#fur)"/>
+  <ellipse cx="64" cy="74" rx="34" ry="28" fill="#e8c29b"/>
+  <circle cx="42" cy="52" r="8" fill="#1d1d1d"/>
+  <circle cx="86" cy="52" r="8" fill="#1d1d1d"/>
+  <path d="M44 79c7 10 33 10 40 0" stroke="#1d1d1d" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M43 79c5 9 37 9 42 0v11c-5 8-37 8-42 0z" fill="#b7293f"/>
+  <path d="M45 84c5 4 33 4 38 0" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <circle cx="23" cy="64" r="11" fill="#6f432b"/>
+  <circle cx="105" cy="64" r="11" fill="#6f432b"/>
+</svg>

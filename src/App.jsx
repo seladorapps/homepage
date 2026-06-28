@@ -16,7 +16,17 @@ const apps = [
     id: 2,
     name: 'Everyday Humour',
     description: 'Start your day with a smile! Daily jokes and funny content.',
-    icon: '😄',
+    icon: '/images/laughing-chimp.png',
+    comingSoon: true,
+    androidLink: '#',
+    iosLink: '#',
+  },
+  {
+    id: 3,
+    name: 'Everyday Gardening Tips',
+    description: 'Practical daily gardening tips to help your plants thrive.',
+    icon: '/images/thinking-chimp-with-twig.png',
+    comingSoon: true,
     androidLink: '#',
     iosLink: '#',
   },
@@ -30,7 +40,7 @@ function Header({ isScrolled }) {
       <div className="header-content">
         <div className="logo-section">
           <img 
-            src="/images/thinking-chimp-with-twig.avif" 
+            src="/images/alpha-chimp.png" 
             alt="Chimp mascot" 
             className="logo-image"
           />
@@ -64,13 +74,13 @@ function AppCard({ app, index }) {
   }, [index])
 
   const direction = index % 2 === 0 ? 'left' : 'right'
-  const isEverydayHumour = app.name === 'Everyday Humour'
+  const isComingSoon = app.comingSoon === true
 
   return (
     <div className={`app-card ${isVisible ? 'visible' : ''} from-${direction}`}>
-      <div className="app-icon">
+      <div className="app-icon icon-rounded-frame">
         {app.icon.startsWith('/') ? (
-          <img src={app.icon} alt={app.name} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+          <img src={app.icon} alt={app.name} style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '16px' }} />
         ) : (
           app.icon
         )}
@@ -81,7 +91,7 @@ function AppCard({ app, index }) {
         {app.descriptionImage && (
           <img src={app.descriptionImage} alt={`${app.name} intro`} style={{ width: '100%', marginTop: '1rem', borderRadius: '8px' }} />
         )}
-        {isEverydayHumour ? (
+        {isComingSoon ? (
           <p className="coming-soon-message">Coming soon</p>
         ) : (
           <div className="store-links">
@@ -111,23 +121,6 @@ function AppCard({ app, index }) {
         )}
       </div>
     </div>
-  )
-}
-
-function Hero() {
-  const [isVisible, setIsVisible] = useState(false)
-
-  useEffect(() => {
-    setIsVisible(true)
-  }, [])
-
-  return (
-    <section className="hero">
-      <div className={`hero-content ${isVisible ? 'visible' : ''}`}>
-        <h2 className="hero-title from-left">Welcome to Selador Apps</h2>
-        <p className="hero-subtitle from-right">Creating apps that make your everyday life better</p>
-      </div>
-    </section>
   )
 }
 
@@ -170,7 +163,7 @@ function AboutSection() {
         <p className="from-right">
           At Selador Apps, we believe in creating simple, beautiful applications 
           that bring joy and value to your daily life. Our team is passionate about 
-          crafting experiences that are both useful and delightful.
+          crafting experiences that are both useful and ape-solutely delightful.
         </p>
       </div>
     </section>
@@ -238,7 +231,6 @@ function App() {
     <div className="app">
       <Header isScrolled={isScrolled} />
       <main>
-        <Hero />
         <AppsSection />
         <AboutSection />
         <ContactSection />
