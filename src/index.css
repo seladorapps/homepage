@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -42,4 +43,5 @@ a {
 
 .app {
   min-height: 100vh;
+  overflow-x: hidden;
 }

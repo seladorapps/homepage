@@ -276,7 +276,10 @@
 /* About Section */
 .about-section {
   padding: 5rem 2rem;
-  background: var(--bg-secondary);
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+  border-radius: 0 0 28px 28px;
+  background: #1f5f33;
 }
 
 .about-content {
@@ -287,7 +290,7 @@
 
 .about-content p {
   font-size: 1.2rem;
-  color: var(--text-light);
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.8;
   opacity: 0;
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
@@ -295,6 +298,7 @@
 }
 
 .about-content .section-title {
+  color: white;
   opacity: 0;
   transform: translateX(-100px);
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
@@ -314,10 +318,17 @@
   transform: translateX(100px);
 }
 
+.about-content.visible p.from-right {
+  transform: translateX(0);
+}
+
 /* Contact Section */
 .contact-section {
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #3f8f56 0%, #1f5f33 100%);
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+  border-radius: 0 0 28px 28px;
+  background: #1f5f33;
 }
 
 .contact-content {
